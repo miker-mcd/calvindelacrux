@@ -1,6 +1,45 @@
 body {
-  background: black;
+  background: white;
   font-family: 'Roboto';
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: black;
+  border: 1px solid blue;
+}
+
+nav {
+  /*text-align: center;*/
+  float: right;
+  padding: 20px;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(./img/icons8-menu-50.png) center;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  padding: 0 10px;
 }
 
 .logo-center {
@@ -14,6 +53,7 @@ body {
   height: 50%;
   text-align: center;
   background-color: white;
+  border: 1px solid red;
 }
 
 .helper {
@@ -27,11 +67,50 @@ body {
   vertical-align: middle;
 }
 
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: black;
   color: #f0f0f0;
   text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    position: absolute;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  nav a {
+    color: black;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
 }
