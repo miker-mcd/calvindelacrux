@@ -91,7 +91,7 @@ nav li {
 
 .helper {
   min-height: 100%;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 section {
@@ -99,7 +99,7 @@ section {
   padding-top: 40px;
   min-height: 100%;
   width: 90%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 section h1 {
