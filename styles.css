@@ -94,9 +94,7 @@ nav li {
   border: 1px solid blue;
 }
 
-#about,
-#work,
-#contact {
+section {
   margin: auto;
   padding-top: 40px;
   min-height: 100%;
@@ -104,9 +102,7 @@ nav li {
   border: 1px solid red;
 }
 
-#about,
-#work,
-#contact h1 {
+section h1 {
   text-align: center;
   /*border: 1px solid blue;*/
 }
