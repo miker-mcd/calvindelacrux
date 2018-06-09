@@ -31,6 +31,7 @@ header {
   left: 0;
   z-index: 100;
   background-color: black;
+  transition: top 0.3s;
 }
 
 nav {

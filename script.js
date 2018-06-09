@@ -10,6 +10,20 @@ $(document).ready(function() {
       $('#topLink').css('display', 'none');
     }
   }
+
+  // hide navbar/show navbar
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      $('header').css('top', '0');
+    } else {
+      $('header').css('top', '-50px');
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  // smooth scrolling
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
