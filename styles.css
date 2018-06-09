@@ -8,6 +8,22 @@ body {
   font-family: 'Roboto';
 }
 
+#topLink {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px 0px;
+  font-size: 2em;
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -47,51 +63,18 @@ nav li {
 
 /*Absolute center the logo*/
 
-/*.logo-center {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-  border: 1px solid green;
-}
-
-.helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.logo-center img {
-  max-width: 50%;
-  vertical-align: middle;
-}*/
-
 .logo-center img {
   position: absolute;
   top: 50%;
   left: 50%;
-  /*  width: 600px;
-  height: 250px;
-  margin-top: -175px;
-  margin-left: -300px;
-*/
-  width: 70%;
-  height: 36%;
-  margin-top: -18%;
-  margin-left: -35%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
 }
 
 /*page sections*/
 
 .helper {
   min-height: 100%;
-  /*border: 1px solid blue;*/
 }
 
 section {
@@ -99,12 +82,10 @@ section {
   padding-top: 40px;
   min-height: 100%;
   width: 90%;
-  /*border: 1px solid red;*/
 }
 
 section h1 {
   text-align: center;
-  /*border: 1px solid blue;*/
 }
 
 footer {
@@ -136,7 +117,7 @@ footer {
     left: 20px;
     top: 60px;
     width: 25%;
-    border-radius: 4px 0 4px 4px;
+    border-radius: 4px;
   }
 
   nav li {
