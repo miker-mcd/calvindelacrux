@@ -89,6 +89,31 @@ section h1 {
   text-align: center;
 }
 
+.container {
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
 footer {
   position: fixed;
   left: 0;
