@@ -43,13 +43,14 @@
     </section>
     <section id="contact">
       <h1>Contact</h1>
-      <div class="container">
-        <form action="" method="post">
-          <input type="text" id="name" name="name" placeholder="NAME">
-          <input type="text" id="email" name="email" placeholder="EMAIL">
-          <textarea id="message" name="message" placeholder="MESSAGE" style="height: 200px"></textarea>
+      <div class="container-contact">
+        <form action="./mailer.php" method="post">
+          <input type="text" id="name" name="name" placeholder="NAME" required>
+          <input type="text" id="email" name="email" placeholder="EMAIL" required>
+          <textarea id="message" name="message" placeholder="MESSAGE" style="height: 200px" required></textarea>
           <input type="submit" value="SEND">
         </form>
+        <div id="form-messages"></div>
       </div>
     </section>
     <footer>
